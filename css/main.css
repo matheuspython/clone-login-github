@@ -21,6 +21,8 @@ ul {
 }
 
 .logo {
+    position: relative;
+    top: 10px;
     width: 35px;
     height: 35px;
     border-radius: 25px;
@@ -48,7 +50,7 @@ header .container a {
 
 .container ul li {
     position: relative;
-    top: 10px;
+    top: 20px;
 }
 
 .container ul li a:hover {
@@ -78,8 +80,186 @@ header .container a {
     font-size: 17px;
     padding: 6px 8px;
     border-radius: 8px;
+    cursor: pointer;
+}
+
+.inputs-login input[type=submit]:hover {
+    color: #adb0b3;
+    border-color: #adb0b3;
 }
 
 .inputs-login input {
     margin: 0 9px;
+}
+
+.primeiros-dois-inputs {
+    display: inline-block;
+}
+
+.inputs-login img {
+    display: none;
+    cursor: pointer;
+}
+
+aside.menu-mobile {
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 300px;
+    background-color: white;
+}
+
+.menu-mobile a {
+    color: rgba(0, 0, 0, 0.452);
+    text-decoration: none;
+}
+
+.menu-mobile ul li {
+    position: relative;
+    left: 10px;
+    border-bottom: 1px solid rgb(168, 168, 168);
+    max-width: 90%;
+    padding: 15px 0;
+    cursor: pointer;
+}
+
+.menu-mobile input[type=text] {
+    width: 280px;
+    height: 32px;
+    background-color: #29292f;
+    color: white;
+    border: 0;
+    border-radius: 4px;
+    padding: 8px;
+    margin: 28px 10px 15px 10px;
+}
+
+span.aside-inputs {
+    margin: 90px;
+}
+
+aside.menu-mobile span.aside-inputs input[type=submit] {
+    background-color: white;
+    padding: 6px 9px;
+    border: 1px solid rgb(218, 209, 209);
+    border-radius: 8px;
+    color: gray;
+    font-size: 15px;
+    margin-left: 8px;
+}
+
+.principal {
+    padding: 0 2%;
+    max-width: 1100px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.text-wraper {
+    float: left;
+    width: 450px;
+    margin: 20vh 0px;
+}
+
+.formulario {
+    border-radius: 5px;
+    padding: 10px;
+    margin: 14px 0;
+    float: right;
+    width: 317px;
+    height: 72vh;
+    background: white;
+}
+
+.formulario span {
+    position: relative;
+    top: 5px;
+    font-size: 13px;
+    font-weight: bold;
+    margin: 0 0px 0 15px;
+}
+
+.formulario input[type=text] {
+    width: 90%;
+    margin: 8px 15px;
+    height: 30px;
+    border: 1px solid #cccccc;
+}
+
+.formulario p {
+    font-size: 12px;
+    text-align: justify;
+    margin: 0 18px;
+}
+
+.formulario input[type=submit] {
+    margin: 10px 18px 15px 18px;
+    width: 90%;
+    height: 50px;
+    color: white;
+    background: #15be31;
+    border-radius: 4px;
+    border: 0;
+}
+
+.formulario .form-text-wraper {
+    color: #5d5d5d;
+}
+
+.form-text-wraper a {
+    text-decoration: none;
+}
+
+.text-wraper h2 {
+    color: white;
+    font-size: 50px
+}
+
+.text-wraper a {
+    text-decoration: none;
+    color: white;
+}
+
+.text-wraper p {
+    color: rgb(189, 189, 189);
+}
+
+
+/*inicio media queryes*/
+
+@media screen and (max-width: 1024px) {
+    .primeiros-dois-inputs {
+        display: none;
+    }
+    .li-desktop {
+        display: none;
+    }
+    .inputs-login img {
+        margin-left: 10px;
+        display: inline-block;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    section.top {
+        height: 120vh;
+    }
+    .text-wraper {
+        float: none;
+        text-align: justify;
+        max-width: 550px;
+        margin: 3px auto;
+        width: 90%;
+    }
+    .formulario {
+        border-radius: 5px;
+        padding: 10px;
+        margin: 0 auto;
+        float: none;
+        width: 310px;
+        height: 72vh;
+        background: white;
+    }
 }
